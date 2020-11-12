@@ -1,0 +1,565 @@
+* {
+    margin: 0rem;
+    padding: 0;
+}
+.meetup-container {
+    max-width: 100%;
+    transition: all .2s;
+}
+
+.header-wrapper {
+    margin: 0 auto;
+    padding: 2rem 0;
+    background: linear-gradient(45deg, #6e0065 0%, #6e0065 13%, #77066a 35%, #871173 62%, #a22482 100%);
+    background-size: cover;
+    background-position: center;
+}
+
+.text-content {
+    text-align: center;
+}
+
+.my-title-1 {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+     animation-name: moveInLeft;
+     animation-duration: 1s;
+     animation-timing-function: ease-out;
+
+}
+
+.my-title-2 {
+    color: #ffffff;
+    font-size: 2rem;
+    letter-spacing: 1.2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 1rem;
+    animation: moveInRight 1s ease-out;
+}
+
+.my-avatar {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    background-image: url(../images/Screenshot_2017-08-05-19-15-28.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem 1rem;
+}
+
+.about-image {
+    flex: 1;
+    background-image: url(../images/undraw_developer_activity_bv83.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 75vh;
+    animation: moveInRight 1s ease-out;
+}
+
+.about-container {
+    display: flex;
+    max-width: 100%;
+    margin: 2rem auto;
+    padding: 5rem 0rem 0rem 10rem;
+    font-family: "Roboto";
+    transition: all .2s;
+    /* animation: moveInRight 1s ease-out;
+    animation: moveInBottom .5s ease-out .75s; */
+}
+
+.about-event {
+    flex: 0 0 40%;
+    padding: 2rem 3.5rem 2rem 3.5rem;
+    animation: moveInBottom 1s ease-out .75s;
+}
+
+.about-heading {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: 'Roboto';
+}
+
+.about-heading:not(:last-of-type) {
+     margin-top: -4rem;
+}
+
+.about-heading:last-of-type {
+    margin-top: 3.2rem;
+}
+
+.about-heading:not(:first-of-type) {
+     margin-bottom: 2.8rem;
+}
+
+
+.about-text {
+    width: 90%;
+    font-size: 1.2rem;
+    color: #252525;
+}
+.about-text:nth-of-type(1) {
+    margin-bottom: 2rem;
+}
+
+.about-text:nth-of-type(3) {
+    margin-bottom: 2rem;
+}
+
+.about-text:first-of-type {
+    margin-top: 2.8rem;
+}
+
+
+
+
+.projects-container {
+    text-align: center;
+    background: #eedded;
+     animation: moveInBottom 1s ease-out .75s;
+}
+
+.projects-content {
+   padding: 4rem  0;
+}
+
+.project-heading {
+    font-family: 'Roboto';
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.project-text {
+    width: 44%;
+    margin: 0 auto;
+    padding: 2rem 0rem 0rem 0rem;
+    font-family: 'Roboto';
+    font-size: 1.3rem;
+    color: #252525;
+}
+
+
+.project-images-container {
+    display: flex;
+    width: 48%;
+    margin: 0 auto;
+}
+
+.project-image-wrapper {
+    position: relative;
+    margin-right: 2rem;
+    transition: transform .3s;
+}
+
+.project-image-wrapper:hover {
+     transform: translateY(-1.5rem) scale(1.03);
+}
+
+
+.project-image-1 {
+    width: 13rem;
+    height: 13rem;
+    margin: 0 auto;
+    background-image: url(../images/Screenshot\ from\ 2020-11-12\ 00.43.23.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.project-image-2 {
+    width: 13rem;
+    height: 13rem;
+    margin: 0 auto;
+    background-image: url(../images/Screenshot\ from\ 2020-11-11\ 20.58.43.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.project-image-3 {
+    width: 13rem;
+    height: 13rem;
+    margin: 0 auto;
+    background-image: url(../images/Screenshot\ from\ 2020-11-12\ 00.32.11.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.project-image-4 {
+    width: 13rem;
+    height: 13rem;
+    margin: 0 auto;
+    background-image: url(../images/Screenshot\ from\ 2020-11-12\ 00.38.10.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.description {
+    margin: 1rem auto;
+    width: 60%;
+}
+
+.description a{
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.name {
+    font-weight: 900;
+    font-family: sans-serif;
+    color: #be4099;
+    margin-top: .9rem;
+}
+
+.name::after {
+    content: "";
+    position: absolute;
+    top: 16.3rem;
+    right: 4rem;
+    width: 6rem;
+    border-bottom: 2px solid #be4099;
+}
+
+.role {
+    font-size: 1.1rem;
+    font-family: 'Roboto';
+    color: #000000;
+    font-weight: 900;
+    margin: .8rem;
+}
+
+.blue-container {
+    display: flex;
+    background-color: #6f99ce;
+    padding: 5rem 0;
+}
+
+.blue {
+    width: 58%;
+}
+
+.book-now {
+    width: 42%;
+}
+
+.ticket {
+    width: 28.5rem;
+    height: 5.5rem;
+    background: linear-gradient(45deg, #6e0065 0%, #6e0065 13%, #77066a 35%, #871173 62%, #a22482 100%);
+    border-radius: 5px;
+    cursor: pointer;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    font-weight: 700;
+    font-family: 'Roboto';
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-left: 4rem;
+}
+
+.ticket a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.question-heading-heading {
+    margin-bottom: .9rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 900;
+    font-family: sans-serif;
+    padding: 0rem 0rem 0rem 14rem;
+}
+
+.question-heading-text {
+   width: 70%;
+   margin: 0 auto;
+   text-align: left;
+   padding: 0rem 0rem 0rem 7.2rem;
+   color: #ffffff;
+   font-size: 1rem;
+   font-family: 'Roboto';
+}
+
+
+@keyframes moveInLeft {
+   0% {
+       opacity: 0;
+       transform: translateX(-10rem);
+   }
+
+    80% {
+        transform: translate(1rem)
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0)
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+
+    80% {
+        transform: translate(-1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+
+@media (max-width: 768px) {
+
+    /* .meetup-container {
+        margin-right: -2rem;
+    } */
+    .projects-container {
+        margin-right: 0;
+    }
+    .project-images-container {
+        width: 55%;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+
+    .project-image-wrapper {
+        width: 50%;
+    }
+    .project-image {
+        width: 26rem;
+        height: 26rem;
+    }
+
+    .project-text {
+        width: 55%;
+    }
+       .ticket {
+           width: 16rem;
+       }
+
+    .about-container {
+        flex-direction: column;
+        padding: 5rem 0rem 0rem 2rem;
+    }
+
+    .about-image {
+        display: none;
+    }
+
+    .name {
+        font-size: 1.4rem;
+        width: 25rem;
+    }
+
+    .name::after {
+        top: 28.9rem;
+        right: -2rem;
+    }
+
+    .description {
+        width: 14.5rem;
+        text-align: right;
+    }
+
+    .question-heading-heading {
+        font-size: 1.5rem;
+        padding: 0rem 0rem 0rem 3rem;
+        width: 25rem;
+    }
+
+    .question-heading-text {
+        width: 80%;
+        padding: 0rem 0rem 0rem 1rem;
+    }
+
+    .ticket {
+        font-size: 1.2rem;
+        margin-left: 1rem;
+    }
+
+    @media (max-width: 425px) {
+        header.meetup-header {
+            margin-right: -4rem;
+        }
+         .about-image {
+             display: none;
+         }
+
+         .project-image {
+             width: 20rem;
+             height: 20rem;
+         }
+
+         .blue-container {
+             flex-direction: column;
+         }
+
+         .question-heading-heading {
+             font-size: 1rem;
+         }
+
+        .my-title-1 {
+            font-size: 1.2rem;
+            letter-spacing: .4rem;
+        }
+
+         .my-title-2 {
+             font-size: 1.2rem;
+             letter-spacing: .4rem;
+         }
+
+         .my-avatar {
+             width: 13rem;
+             height: 13rem;
+         }
+          .about-container {
+              flex-direction: column;
+              padding: 5rem 0rem 0rem 4rem;
+              margin-right: -4rem;
+          }
+
+        .projects-container {
+            margin-right: -5rem;
+        }
+
+        .project-images-container {
+            width: 67%;
+        }
+
+        .name {
+            width: 19rem;
+        }
+
+        .name::after {
+            top: 22.7rem;
+        }
+
+        .description {
+            width: 11.5rem;
+        }
+
+        .blue-container {
+            margin-right: -5rem;
+        }
+        .question-heading-text {
+            padding: 0rem 0rem 2rem 3rem;
+        }
+        .ticket {
+            margin-left: 3rem;
+        }
+    }
+
+     @media (max-width: 320px) {
+         header.meetup-header {
+             margin-right: -8rem;
+         }
+
+         .about-image {
+             display: none;
+         }
+
+         .project-image {
+             width: 20rem;
+             height: 20rem;
+         }
+
+         .blue-container {
+             flex-direction: column;
+         }
+
+         .question-heading-heading {
+             font-size: 1rem;
+         }
+
+         .my-title-1 {
+             font-size: 1.2rem;
+             letter-spacing: .4rem;
+         }
+
+         .my-title-2 {
+             font-size: 1.2rem;
+             letter-spacing: .4rem;
+         }
+
+         .my-avatar {
+             width: 13rem;
+             height: 13rem;
+         }
+
+        .about-container {
+            padding: 5rem 0rem 0rem 8rem;
+            margin-right: -8rem;
+        }
+
+        .about-event {
+            padding: 2rem 2rem 2rem 0rem;
+        }
+
+        .projects-container {
+            margin-right: -8rem;
+        }
+
+         .project-images-container {
+             width: 70%;
+         }
+
+         .name {
+             width: 19rem;
+         }
+
+         .name::after {
+             top: 22.7rem;
+         }
+
+         .description {
+             width: 11.5rem;
+         }
+
+        .blue-container {
+            margin-right: -8rem;
+        }
+
+         .question-heading-text {
+             padding: 0rem 0rem 2rem 3rem;
+         }
+
+         .ticket {
+             margin-left: 3rem;
+         }
+     }
+}
+
